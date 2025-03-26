@@ -1,0 +1,120 @@
+/* Importer la police d'écriture */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Définition des couleurs */
+:root {
+  --couleur-principale: #FF69B4; /* Rose */
+  --couleur-secondaire: #FFFFFF; /* Blanc */
+  --couleur-texte: #ffffff; /* Blanc */
+}
+
+/* Style global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Great Vibes', cursive;
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-texte);
+}
+
+/* Style de l'en-tête */
+header {
+  background-color: var(--couleur-principale);
+  padding: 20px;
+  text-align: center;
+}
+
+.titre {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace; /* Nouvelle police pour le titre */
+}
+
+/* Style du message */
+.message {
+  font-size: 24px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style du pied de page */
+footer {
+  background-color: var(--couleur-principale);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Effet de transition pour les éléments */
+.titre, .message {
+  transition: transform 0.5s ease-in-out;
+}
+
+.titre:hover, .message:hover {
+  transform: scale(1.1);
+}
+
+/* Ajouter une photo comme arrière-plan */
+body {
+  font-family: 'Great Vibes', cursive;
+  background-image: url(1739634038506.jpg); /* Remplacez 'nom_de_la_photo.jpg' par le nom de votre photo */
+  background-size: cover; /* Ajuster la taille de la photo pour qu'elle couvre l'ensemble de la page */
+  background-position: center; /* Centrer la photo */
+  background-repeat: no-repeat; /* Ne pas répéter la photo */
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-texte);
+}
+
+/* Médias queries pour les écrans mobiles */
+@media (max-width: 480px) {
+  .titre {
+    font-size: 24px;
+  }
+  .message {
+    font-size: 18px;
+  }
+  header {
+    padding: 10px;
+  }
+  footer {
+    padding: 5px;
+  }
+}
+
+/* Médias queries pour les tablettes */
+@media (min-width: 481px) and (max-width: 768px) {
+  .titre {
+    font-size: 30px;
+  }
+  .message {
+    font-size: 22px;
+  }
+  header {
+    padding: 15px;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Médias queries pour les ordinateurs */
+@media (min-width: 769px) {
+  .titre {
+    font-size: 36px;
+  }
+  .message {
+    font-size: 24px;
+  }
+  header {
+    padding: 20px;
+  }
+  footer {
+    padding: 15px;
+  }
+}
